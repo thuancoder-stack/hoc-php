@@ -21,7 +21,7 @@
             $x = 2;
         } 
         if ($x!=2) {
-            $err3 = "Mã đáo thành công";
+            $err3 = "Đăng nhập thành công";
         }
     }
    
