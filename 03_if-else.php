@@ -6,17 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-            <!-- tinh diem 6 mon toan, lys hoas, anh, van, lich su -->
-    <form action="" method="post">
-        <input type="text" name="toan" id="toan" placeholder="Điểm toán">
-        <input type="text" name="ly" id="ly" placeholder="Điểm lý">
-        <input type="text" name="hoa" id="hoa" placeholder="Điểm hóa">
-        <input type="text" name="anh" id="anh" placeholder="Điểm anh">
-        <input type="text" name="van" id="van" placeholder="Điểm văn">
-        <input type="text" name="ls" id="ls" placeholder="Điểm lịch sử">
-        <button type="submit" name="submit">Tinh xep hang</button>
-        <?php echo $_POST['toan']." - ".$_POST['ly']." - ".$_POST['hoa']." - ".$_POST['anh']." - ".$_POST['van']." - ".$_POST['ls']  ; ?>       
-    </form>
     <?php
         if(isset($_POST['submit'])){
             $toan = (float)$_POST['toan'];
@@ -44,5 +33,17 @@
                 echo "Gioi";}
         }
     ?>
+    <!-- tinh diem 6 mon toan, lys hoas, anh, van, lich su -->
+    <form action="" method="post">
+        <input type="text" name="toan" id="toan" placeholder="Điểm toán">
+        <input type="text" name="ly" id="ly" placeholder="Điểm lý">
+        <input type="text" name="hoa" id="hoa" placeholder="Điểm hóa">
+        <input type="text" name="anh" id="anh" placeholder="Điểm anh">
+        <input type="text" name="van" id="van" placeholder="Điểm văn">
+        <input type="text" name="ls" id="ls" placeholder="Điểm lịch sử">
+        <button type="submit" name="submit">Tinh xep hang</button>
+        <?php echo $_POST['toan']." - ".$_POST['ly']." - ".$_POST['hoa']." - ".$_POST['anh']." - ".$_POST['van']." - ".$_POST['ls']  ; ?>       
+    </form>
+    
 </body>
 </html>

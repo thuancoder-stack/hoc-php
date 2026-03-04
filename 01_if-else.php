@@ -6,13 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    
-<!-- // check a number % 7 ? -->
- <form action="" method="post">
-        <input type="text" name="number" id="number">
-        <button type="submit" name="submit">Check</button>
-        <?php echo $_POST['number']." % 7 ? divisible : not divisible"  ; ?>
- </form>
 <?php
     if(isset($_POST['submit'])){
         $number = $_POST['number'];
@@ -22,6 +15,13 @@
             echo "$number is not divisible by 7";
         }
     }; 
-?>
+?>   
+<!-- // check a number % 7 ? -->
+<form action="" method="post">
+        <input type="text" name="number" id="number">
+        <button type="submit" name="submit">Check</button>
+        <?php echo $_POST['number']." % 7 ? divisible : not divisible"  ; ?>
+</form>
+
 </body>
 </html>
